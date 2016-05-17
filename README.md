@@ -1,2 +1,1 @@
-# gitlab_issues
-gitlab api issues
+### Gitlab api issues ruby client library
