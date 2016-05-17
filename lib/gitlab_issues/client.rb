@@ -1,8 +1,10 @@
+require "gitlab_issues/client/connection"
 require "gitlab_issues/client/issues"
 
 module GitlabIssues
 	class Client
 		include HTTParty
+		include GitlabIssues::Client::Connection
 		include GitlabIssues::Client::Issues
 
     base_uri "https://gitlab.com/api/v3"
